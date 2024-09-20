@@ -1,0 +1,364 @@
+/* main container */
+.home{
+    width: 100%;
+    min-height: 100svh;
+    background-image: url("src/assets/bg/dark-bg.webp");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+}
+
+/* navbar container*/
+.home nav{
+    min-height: 10svh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo sunflower */
+nav img{
+    width: 200px;
+    height: auto;
+}
+
+/* links container */
+nav section{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+/* links */
+.links a{
+    text-decoration: none;
+    font-family: var(--font-text);
+    color: #ffffff;
+    font-weight: 500;
+    transition: all ease-in-out 0.5s;
+}
+
+/* hover effect */
+.links a:hover{
+    transition: all ease-in-out 0.5s;
+    color: var(--color-yellow);
+}
+
+/* hide burguer button*/
+.burguer{
+    display: none;
+}
+
+/* home content */
+.home main{ 
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+}
+
+/* home title */
+.home .title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.title h1{
+    font-family: var(--font-title);
+    font-size: clamp(5rem, 1.1429rem + 4.2857vw, 6.5rem);
+    font-weight: 700;
+    line-height: 85px;
+}
+
+/* span */
+.title h1 .cursive{
+    font-family: "The Nautigal", cursive;
+    color: var(--color-yellow);
+    font-size: clamp(10rem, 4.8571rem + 5.7143vw, 12rem);
+    font-weight: 400;
+    padding-left: 7vw;
+}
+
+/* text */
+.title p{
+    max-width: 500px;
+    font-family: var(--font-text);
+    color: var(--color-grey);
+    font-size: clamp(1.1rem, 0.8429rem + 0.2857vw, 1.2rem);
+    font-weight: 400;
+    padding-top: 3rem;
+}
+
+.title p span{
+    color: var(--color-yellow);
+    font-size: clamp(1.1rem, 0.5857rem + 0.5714vw, 1.3rem);
+}
+
+/* button */
+.title a {
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-black);
+    background: var(--color-yellow);
+    padding: 1rem 2rem;
+    border-radius: 18px;
+    margin-left: 14vw;
+    margin-top: 2rem;
+}
+
+/* image container */
+.home-img{
+    max-width: 550px;
+    height: auto;
+    align-self: flex-end;
+}
+
+/* image */
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*responsive desing*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    /* main container */
+    .home{
+        padding: 0 3rem;
+    }
+
+    /* logo sunflower */
+    nav img{
+        width: 180px;
+        height: auto;
+    }
+
+    /* links container */
+    nav section{
+        gap: 2rem;
+    }
+
+    /* home content */
+    .home main{ 
+        gap: 5vw;
+    }
+
+    /* home title */
+    .home .title{
+        gap: 2rem;
+    }
+
+    .title h1{
+        font-size: clamp(4rem, 1.5468rem + 3.8369vw, 5rem);
+        font-weight: 600;
+        line-height: 80px;
+    }
+
+    /* span */
+    .title h1 .cursive{
+        font-size: clamp(8rem, 3.0935rem + 7.6739vw, 10rem);
+        padding-left: 5vw;
+    }
+
+    /* text */
+    .title p{
+        max-width: 380px;
+        font-size: clamp(1rem, 0.7547rem + 0.3837vw, 1.1rem);
+        padding-top: 1.5rem;
+    }
+
+    .title p span{
+        font-size: clamp(1rem, 0.7547rem + 0.3837vw, 1.1rem);
+    }
+
+    /* button */
+    .title a {
+        font-weight: 500;
+        padding: 0.8rem 1.5rem;
+        margin-left: 12vw;
+        margin-top: 1.5rem;
+    }
+
+    /* image container */
+    .home-img{
+        max-width: 500px;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    /* image */
+    .home-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    /* main container */
+    .home{
+        padding: 0;
+    }
+
+    /* navbar container*/
+    .home nav{
+        align-self: start;
+        background: var(--color-black);
+        padding: 0.5rem 3rem;
+        position: fixed;
+        z-index: 1;
+    }
+
+    /* logo sunflower */
+    nav img{
+        width: 150px;
+        height: auto;
+    }
+
+    /* hide burguer button*/
+    .burguer{
+        display: flex;
+    }
+
+    /*links*/
+    .links {
+        position: absolute;
+        top: -700px;
+        right: -2000px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .links a{
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: right;
+    }
+
+    .links.active{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        right: 0;
+        top: 80px;
+        z-index: 1;
+        background: var(--color-black);
+    }
+
+    /* home content */
+    .home main{ 
+        gap: 5vw;
+        padding: 0 3rem;
+    }
+
+    /* home title */
+    .home .title{
+        gap: 1.5rem;
+    }
+
+    .title h1{
+        font-size: clamp(3rem, -0.0118rem + 6.2745vw, 4rem);
+        font-weight: 700;
+        line-height: 70px;
+    }
+
+    /* span */
+    .title h1 .cursive{
+        font-size: clamp(8rem, 1.9765rem + 12.549vw, 10rem);
+        padding-left: 7vw;
+    }
+
+    /* text */
+    .title p{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .title p span{
+        font-size: 1rem;
+    }
+
+    /* button */
+    .title a {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.8rem 1.3rem;
+        margin-top: 1.5rem;
+    }
+
+    /* image container */
+    .home-img{
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .home nav{
+        min-height: 8svh;
+        padding: 0.5rem 1rem;
+    }
+
+    .links.active{
+        top: 67px;
+    }
+
+    .home main{
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .home .title{
+        margin-top: 10rem;
+        max-width: 300px;
+    }
+
+    .home .title h1{
+        line-height: 50px;
+    }
+
+    .title h1 .cursive {
+        font-size: 7rem;
+    }
+
+    .title a{
+        margin-left: 0;
+    }
+
+    /* image container */
+    .home-img{
+        max-width: 300px;
+        height: auto;
+        align-self: center;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+}
+
+
+

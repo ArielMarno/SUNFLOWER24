@@ -1,0 +1,24 @@
+:root{
+
+  /*fonts vars*/
+  --font-title: "Oswald", sans-serif;
+  --font-text: "Montserrat", sans-serif;
+
+  /*color vars*/
+  --color-yellow: #FFE500;
+  --color-grey: #525252;
+  --color-black: #232323;
+  --color-white: #ffffff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body{
+  color: #ffffff;
+  background: #232323;
+}
