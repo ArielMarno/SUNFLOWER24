@@ -117,7 +117,7 @@ nav section{
 /* image container */
 .home-img{
     max-width: 550px;
-    height: auto;
+    height: 100%;
     align-self: flex-end;
 }
 
@@ -353,11 +353,6 @@ nav section{
         height: auto;
         align-self: center;
     }
-}
-
-/*SMARTH PHONES*/
-@media only screen and (max-width:480px){
-
 }
 
 
