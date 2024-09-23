@@ -1,0 +1,340 @@
+/* main component container */
+.services{
+    width: 100%;
+    min-height: 100svh;
+    background-image: url("src/assets/bg/services.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 5rem;
+    gap: 5rem;
+}
+
+/* title container */
+.services-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* title */
+.services-title h2{
+    font-family: var(--font-title);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    line-height: 57px;
+}
+
+/*middle h2*/
+.services-title .middle{
+    margin-left: 3vw;
+}
+
+/*las h2*/
+.services-title h2:last-child{
+    margin-left: 12vw;
+}
+
+/* yellow h2 words*/
+.services-title h2 span{
+    font-family: var(--font-title);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    line-height: 37px;
+    color: var(--color-yellow);
+}
+
+/* main container content */
+.services-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text and button container */
+.content_btn{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* text */
+.content_btn p{
+    width: 320px;
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* button */
+.content_btn a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-yellow);
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 1.4rem;
+    border-bottom: 1.5px solid var(--color-yellow);
+    padding-bottom: 0.5rem;
+}
+
+/* button arrow */
+.content_btn a img{
+    width: 28px;
+    height: auto;
+}
+
+/* services container */
+.content_services{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+/* service item */
+.content_services div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15vw;
+    font-family: var(--font-title);
+}
+
+/* service number*/
+.content_services div span{
+    color: var(--color-yellow);
+    font-size: clamp(2.5rem, 1.2143rem + 1.4286vw, 3rem);
+    font-weight: 500;
+}
+
+.content_services div h3{
+    font-family: var(--font-text);
+    font-size: clamp(1.5rem, 0.2143rem + 1.4286vw, 2rem);
+    font-weight: 600;
+}
+
+
+/*responsive desing*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .services{
+        padding: 3rem 4rem;
+    }
+
+    /* title */
+    .services-title h2{
+        font-size: clamp(1.5rem, 0.2734rem + 1.9185vw, 2rem);
+        line-height: 33px;
+    }
+
+    /*middle h2*/
+    .services-title .middle{
+        margin-left: 2vw;
+    }
+
+    /*las h2*/
+    .services-title h2:last-child{
+        margin-left: 10vw;
+    }
+
+    /* yellow h2 words*/
+    .services-title h2 span{
+        font-size: clamp(1.5rem, 0.2734rem + 1.9185vw, 2rem);
+        line-height: 33px;
+    }
+
+    /* text and button container */
+    .content_btn{
+        width: 50%;
+    }
+
+    /* button */
+    .content_btn a{
+        font-size: 1.2rem;
+    }
+
+    /* button arrow */
+    .content_btn a img{
+        width: 25px;
+        height: auto;
+    }
+
+    /* services container */
+    .content_services{
+        width: 50%;
+        gap: 2.5rem;
+    }
+
+    /* service item */
+    .content_services div{
+        gap: 12vw;
+    }
+
+    /* service number*/
+    .content_services div span{
+        font-size: clamp(2rem, 0.7734rem + 1.9185vw, 2.5rem);
+    }
+
+    .content_services div h3{
+        font-size: clamp(1.3rem, 0.8094rem + 0.7674vw, 1.5rem);
+    }
+
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .services{
+        min-height: 95svh;
+        padding: 1.5rem 3rem;
+    }
+
+    /* title */
+    .services-title h2{
+        font-size: clamp(1.3rem, 0.6976rem + 1.2549vw, 1.5rem);
+        line-height: 27px;
+    }
+
+    /* yellow h2 words*/
+    .services-title h2 span{
+        font-size: clamp(1.3rem, 0.6976rem + 1.2549vw, 1.5rem);
+        line-height: 27px;
+    }
+
+    /* text */
+    .content_btn p{
+        width: 300px;
+        font-size: 0.9rem;
+    }
+
+    /* button */
+    .content_btn a{
+        font-size: 1.1rem;
+    }
+
+    /* services container */
+    .content_services{
+        gap: 2rem;
+    }
+
+    /* service item */
+    .content_services div{
+        gap: 10vw;
+    }
+
+    /* service number*/
+    .content_services div span{
+        font-size: clamp(1.7rem, 0.7965rem + 1.8824vw, 2rem);
+    }
+
+    .content_services div h3{
+        font-size: clamp(1.1rem, 0.4976rem + 1.2549vw, 1.3rem);
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .services{
+        padding: 1rem 2rem;
+        gap: 0;
+    }
+
+    .services-title h2, .services-title h2 span {
+        font-size: 1.3rem;
+    }
+
+     /*middle h2*/
+     .services-title .middle{
+        margin-left: 2vw;
+    }
+
+    .services-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    /* service number*/
+    .content_services div span{
+        font-size: 2rem;
+    }
+
+    .content_services div h3{
+        font-size: 0.9rem;
+        min-width: 165px;
+    }
+
+
+    /* service item */
+    .content_services div{
+        gap: 5vw;
+    }
+
+    .content_btn{
+        align-self: flex-start;
+    }
+
+    /* text */
+    .content_btn p{
+        max-width: 250px;
+    }
+
+    /* button */
+    .content_btn a{
+        font-size: 1rem;
+    }
+
+    /* button arrow */
+    .content_btn a img{
+        width: 22px;
+        height: auto;
+    }
+
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    
+    .services{
+        padding: 0.5rem 1rem;
+    }
+
+    .services-title h2, .services-title h2 span {
+        font-size: 1.1rem;
+        line-height: 23px;
+    }
+
+    /*middle h2*/
+    .services-title .middle{
+        margin-left: 1vw;
+    }
+
+    /*las h2*/
+    .services-title h2:last-child{
+        margin-left: 3vw;
+    }
+
+    .services-content{
+        align-items: center;
+        justify-content: center;
+    }
+
+     /* button */
+     .content_btn a{
+        font-size: 0.8rem;
+    }
+}

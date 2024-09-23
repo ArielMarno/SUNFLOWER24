@@ -9,8 +9,8 @@ const About = () => {
         </div>
         <div className='about-title'>
             <div className='title'>
-                <h2>TRABAJAMOS CON <span>CREATIVIDAD</span></h2><br />
-                <h2 className='middle'>PARA <span>IMPACTAR</span> EN EL <span>CRECIMIENTO</span></h2> <br />
+                <h2>TRABAJAMOS CON <span>CREATIVIDAD</span></h2>
+                <h2 className='middle'>PARA <span>IMPACTAR</span> EN EL <span>CRECIMIENTO</span></h2>
                 <h2> DE TU NEGOCIO.</h2>
             </div>
             <section>
