@@ -1,0 +1,172 @@
+.portfolio{
+    width: 100%;
+    min-height: 100svh;
+    background-image: url("src/assets/bg/dark-bg.webp");
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+
+.portfolio-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5rem 0;
+}
+
+.portfolio-title h2{
+    font-family: var(--font-title);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    line-height: 57px;
+}
+
+.portfolio-title h2 span{
+    color: var(--color-yellow);
+    font-family: var(--font-title);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    line-height: 57px;
+}
+
+.portfolio-title h2:last-child{
+    padding-right: 5vw;
+}
+
+
+.portfolio-cases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.case{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.case_image{
+    max-width: 560px ;
+    max-height: 690px;
+    mask-image: linear-gradient(
+        var(--color-black) 80%,
+        transparent
+    );
+}
+
+.case_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.case_content h3{
+    font-family: var(--font-title);
+    font-size: clamp(1.8rem, -0.7714rem + 2.8571vw, 2.8rem);
+    font-weight: 500;
+}
+
+.case_content p{
+    max-width: 680px;
+    font-family: var(--font-text);
+    font-size: clamp(1.1rem, 0.5857rem + 0.5714vw, 1.3rem);
+}
+
+/*responsive desing*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .portfolio{
+        padding: 3rem 4rem;
+    }
+
+    .portfolio-title h2, .portfolio-title h2 span {
+        font-size: clamp(1.5rem, 0.2734rem + 1.9185vw, 2rem);
+        line-height: 33px;
+    }
+
+    .case{
+        gap: 3rem;
+    }
+
+    .case_content h3{
+        font-size: clamp(1.3rem, 0.7286rem + 1.1905vw, 1.8rem);
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .portfolio{
+        padding: 3rem;
+    }
+
+    .case{
+        gap: 1.5rem;
+    }
+
+    .case_content p{
+        font-size: 1rem;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    
+    .portfolio{
+        padding: 1.5rem 2rem;
+    }
+
+    .portfolio-title{
+        padding: 3rem 0;
+    }
+
+    .portfolio-title h2, .portfolio-title h2 span {
+        font-size: clamp(1.2rem, 0.9062rem + 1.2371vw, 1.5rem);
+        line-height: 33px;
+    }
+
+    .case{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .case.middle{
+        flex-direction: column-reverse;
+    }
+
+    .case_image{
+        width: 100%;
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .case_content h3{
+        font-size: 1.2rem;
+    }
+
+    .case_content p{
+        font-size: 0.9rem;
+    }
+
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    
+    .portfolio{
+        padding: 0.5rem 1rem;
+    }
+}

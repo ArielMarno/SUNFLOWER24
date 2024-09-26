@@ -336,5 +336,6 @@
      /* button */
      .content_btn a{
         font-size: 0.8rem;
+        padding-bottom: 0.3rem;
     }
 }
