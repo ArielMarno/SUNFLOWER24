@@ -78,7 +78,7 @@
 }
 
 .case_content p{
-    max-width: 680px;
+    max-width: 600px;
     font-family: var(--font-text);
     font-size: clamp(1.1rem, 0.5857rem + 0.5714vw, 1.3rem);
 }
@@ -153,6 +153,9 @@
         max-height: auto;
     }
 
+    .portfolio-cases{
+        padding-bottom: 3rem;
+    }
     .case_content h3{
         font-size: 1.2rem;
     }
