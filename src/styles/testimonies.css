@@ -229,15 +229,22 @@
         padding: 1rem 2rem;
     }
 
+    .testimonies-title{
+        gap: 0.3rem;
+    }
 
     .testimonies-title h2{
         font-size: 1.7rem;
         line-height: 32px;
+        align-self: center;
     }
 
     .testimonies-title p{
+        max-width: 270px;
         font-size: 1.3rem;
         line-height: 27px;
+        align-self: center;
+        text-align: center;
     }
 
     /*slider container*/
