@@ -1,0 +1,191 @@
+/*main container*/
+.footer{
+    width: 100%;
+    min-height: 50svh;
+    background-image: url("src/assets/bg/footer.webp");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 5rem;
+    padding-bottom: 0.5rem;
+}
+
+/*content container*/
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*links container*/
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+/*links*/
+.footer_links a{
+    font-family: var(--font-text);
+    text-decoration: none;
+    font-size: clamp(1.1rem, 0.9753rem + 0.2597vw, 1.3rem);
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+/*contact data container*/
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+/*number, email*/
+.footer_contact p{
+    font-family: var(--font-title);
+    font-size: clamp(3rem, 0.9058rem + 3.2753vw, 5rem);
+    line-height: 67px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+/*phone*/
+.footer_contact .cellphone{
+    font-size: clamp(2.5rem, 0.6299rem + 3.8961vw, 5.5rem);
+}
+
+/*social icons container*/
+.footer_contact-icons{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*social icons*/
+.footer_contact-icons a img{
+    width: 60px;
+    height: auto;
+}
+
+/*copyright container*/
+.footer-copy{
+    font-family: var(--font-text);
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+/*copyright text*/
+.footer-copy p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-copy p span{
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
+
+
+
+/*responsive desing*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+    .footer{
+        padding: 3rem 4rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /*number, email*/
+    .footer_contact p{
+        line-height: 45px;
+    }
+
+    /*social icons container*/
+    .footer_contact-icons{
+        padding-top: 0.5rem;
+    }
+
+    /*social icons*/
+    .footer_contact-icons a img{
+        width: 50px;
+        height: auto;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+    .footer{
+        padding: 3rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /*content container*/
+    .footer-content{
+        justify-content: flex-end;
+    }
+
+    .footer_links{
+        display: none;
+    }
+    
+    /*number, email*/
+    .footer_contact p{
+        font-size: clamp(1.5rem, 0.6135rem + 3.7325vw, 3rem);
+        line-height: 35px;
+    }
+
+    /*social icons*/
+    .footer_contact-icons a img{
+        width: 42px;
+        height: auto;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    .footer{
+        padding: 3rem 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /*number, email*/
+    .footer_contact p{
+        line-height: 30px;
+    }
+
+    /*copyright text*/
+    .footer-copy p{
+        font-size: 0.9rem;
+    }
+
+    .footer-copy p span{
+        font-size: 0.9rem;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    .footer{
+        padding: 3rem 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /*copyright text*/
+    .footer-copy p{
+        max-width: 250px;
+        font-size: 0.8rem;
+    }
+
+    .footer-copy p span{
+        font-size: 0.8rem;
+    }
+}
