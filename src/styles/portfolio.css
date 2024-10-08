@@ -19,18 +19,23 @@
 
 .portfolio-title h2{
     font-family: var(--font-title);
-    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 3.5rem);
     line-height: 57px;
 }
 
 .portfolio-title h2 span{
     color: var(--color-yellow);
     font-family: var(--font-title);
-    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 3.5rem);
     line-height: 57px;
 }
 
+.portfolio-title .middle{
+    padding-right: 1.5vw;
+}
+
 .portfolio-title h2:last-child{
+    align-self: flex-end;
     padding-right: 5vw;
 }
 
@@ -113,6 +118,11 @@
         padding: 3rem;
     }
 
+    .portfolio-title h2, .portfolio-title h2 span {
+        font-size: clamp(1.3rem, 0.6976rem + 1.2549vw, 1.5rem);
+        line-height: 27px;
+    }
+
     .case{
         gap: 1.5rem;
     }
@@ -131,11 +141,7 @@
 
     .portfolio-title{
         padding: 3rem 0;
-    }
-
-    .portfolio-title h2, .portfolio-title h2 span {
-        font-size: clamp(1.2rem, 0.9062rem + 1.2371vw, 1.5rem);
-        line-height: 33px;
+        margin-top: 2rem;
     }
 
     .case{

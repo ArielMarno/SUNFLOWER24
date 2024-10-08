@@ -28,18 +28,18 @@ const Home = () => {
   }, []);
   const handleClickCalendly = (event) => {
     event.preventDefault();
-    window.Calendly.showPopupWidget('https://calendly.com/contacto-xv2x/30min');
+    window.Calendly.showPopupWidget('https://calendly.com/contacto-xv2x/sunflower');
   };
 
   return (
     <div className='home'>
         <nav>
-            <img src={logo} alt="logo" />
+            <a href="#"><img src={logo} alt="logo" /></a>
             <section className={`links ${click ? 'active' : ''}`}>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#contacto">Contacto</a>
+              <a href="#nosotros">Nosotros</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#portafolio">Portafolio</a>
+              <a href="#contacto">Contacto</a>
             </section>
             <div className="burguer">
                 <Burguer handleClick={handleClick}/> 
@@ -53,7 +53,7 @@ const Home = () => {
                 <p>Combinamos <span>innovación</span> con <span>estrategias</span> certeras para mejorar tu presencia en la web y ayudarte a alcanzar tus <span>objetivos comerciales</span>.
                 </p>
 
-                <a href="https://calendly.com/contacto-xv2x/30min" onClick={handleClickCalendly}>Asesoría Gratuita</a>
+                <a className='calendly-inline-widget' href="https://calendly.com/contacto-xv2x/sunflower" onClick={handleClickCalendly}>Asesoría Gratuita</a>
             </div>
             <div className='home-img'>
                 <img src={person} alt="persona-flores" />

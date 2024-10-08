@@ -25,9 +25,9 @@
 .contact-title p, .contact-title p span{
     color: var(--color-grey);
     font-family: var(--font-text);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    max-width: 400px;
+    max-width: 490px;
 }
 
 /*yellow text*/
@@ -44,7 +44,7 @@
 
 .contact-title h2, .contact-title h2 span{
     font-family: var(--font-title);
-    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 3.5rem);
     line-height: 57px;
 }
 
@@ -66,7 +66,7 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    margin-left: 7vw;
+    margin-left: 12.5vw;
 }
 
 /*input and textarea*/
@@ -101,7 +101,7 @@ textarea{
 
 /*submit button*/
 button{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     font-family: var(--font-text);
     font-size: 1.5rem;
     font-weight: 500;
@@ -173,7 +173,7 @@ button img{
 @media only screen and (max-width:1023px){
     /*main container*/
     .contact{
-        padding: 1.5rem 3rem;
+        padding: 3rem;
     }
 
     /*title container*/
@@ -223,17 +223,13 @@ button img{
 @media only screen and (max-width:768px){
     /*main container*/
     .contact{
-        padding: 1.5rem 2rem;
+        padding: 3rem 2rem;
     }
 
     .contact-title{
         flex-direction: column-reverse;
         gap: 2.5rem;
         align-items: flex-start;
-    }
-
-    .contact-title h2, .contact-title h2 span{
-        font-size: clamp(1.5rem, 1.1667rem + 1.1111vw, 1.7rem);
     }
 
     /*text*/
@@ -264,12 +260,11 @@ button img{
 @media only screen and (max-width:480px){
     /*main container*/
     .contact{
-        padding: 0.5rem 1rem;
-        min-height: 95svh;
+        padding: 3rem 1rem;
     }
 
     form{
-        justify-self: center;
+        justify-self: flex-start;
     }
 
     /*submit button*/

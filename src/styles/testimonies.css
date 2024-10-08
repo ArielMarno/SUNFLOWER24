@@ -8,41 +8,73 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    justify-items: center;
     padding: 3rem 5rem;
+    gap: 1rem;
 }
 
 /*title container*/
 .testimonies-title{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5rem;
 }
 
-.testimonies-title h2{
+.slider-arrows{
+    display: none;
+}
+
+
+.testimonies-title .title{
     font-family: var(--font-title);
-    font-size: clamp(3rem, 0.4286rem + 2.8571vw, 4rem);
+    font-size: clamp(3rem, 0.4286rem + 2.8571vw, 3.5rem);
     line-height: 57px;
+}
+
+.testimonies-title h2, .testimonies-title h2 span{
+    font-family: var(--font-title);
+    font-size: clamp(3rem, 0.4286rem + 2.8571vw, 3.5rem);
+    line-height: 57px;
+}
+
+.testimonies-title .title h2:last-child{
+    margin-left: 3vw;
+}
+
+.testimonies-title h2 span{
     color: var(--color-yellow);
 }
 
-.testimonies-title p{
-    font-family: var(--font-title);
-    font-size: clamp(2rem, 0.7143rem + 1.4286vw, 2.5rem);
+.seemore a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-yellow);
+    font-family: var(--font-text);
     font-weight: 500;
+    font-size: 1.4rem;
+    border-bottom: 1.5px solid var(--color-yellow);
+    padding-bottom: 0.5rem;
+}
+
+.seemore a img{
+    width:28px;
+    height: auto;
 }
 
 /*slider container*/
 .testimonies-slider{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    justify-content: center;
 }
 
 /*slider*/
 .testimonies-slider .slider{
-    max-width: 745px;
+    max-width: 1122px;
     display: grid;
     grid-auto-flow: column;
     overflow-x: auto;
@@ -80,14 +112,15 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.5rem;
-    background: rgb(35, 35, 35, 0.7);
-    border: 1px solid var(--color-yellow);
-    padding: 1.5rem;
+    background: rgb(82, 82, 82, 0.2);
+    border: 1px solid #c0b86f;
+    padding: 1rem;
     padding-top: 3rem;
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 .testimonies .card:last-child{
+    display: none;
     margin-right: 0;
 }
 
@@ -95,7 +128,7 @@
 .testimonies .card img{
     width: 100px;
     height: auto;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 /*name*/
@@ -108,25 +141,11 @@
 
 /*text*/
 .testimonies .card p{
+    max-width: 95%;
     font-family: var(--font-text);
     font-size: 1rem;
+    font-weight: 500;
 }
-
-/*arrows container*/
-.slider-arrows{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-/*arrows*/
-.slider-arrows img{
-    width: 110px;
-    height: auto;
-    cursor: pointer;
-}
-
 
 /*responsive desing*/
 
@@ -135,11 +154,10 @@
 
     /*main container*/
     .testimonies{
-        padding: 3rem 4rem;
+        padding: 3rem 1rem;
     }
 
-
-    .testimonies-title h2{
+    .testimonies-title h2, .testimonies-title h2 span{
         font-size: clamp(2rem, 0.8571rem + 2.381vw, 3rem);
         line-height: 47px;
     }
@@ -148,23 +166,24 @@
         font-size: clamp(1.8rem, 1.5714rem + 0.4762vw, 2rem);
     }
 
-    /*slider container*/
-    .testimonies-slider{
-        gap: 3rem;
-    }
-
     /*slider*/
     .testimonies-slider .slider{
-        max-width: 630px;
+        max-width: 950px;
+        align-items: center;
+    }
+
+    .title .slider-arrows img{
+        width: 50px;
+        height: auto;
     }
 
     /*testimonies card*/
     .testimonies .card{
-        width: 300px;
-        height: 400px;
-        padding: 1.1rem;
+        width: 280px;
+        height: 380px;
+        padding: 1rem;
         padding-top: 3rem;
-        margin-right: 1rem;
+        margin-right: 0;
     }
 
     /*image*/
@@ -181,15 +200,94 @@
 
     /*text*/
     .testimonies .card p{
+        max-width: 100%;
         font-size: 0.9rem;
     }
 
-    /*arrows container*/
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    /*main container*/
+    .testimonies{
+        padding: 3rem 1.5rem;
+    }
+
+    .testimonies-title{
+        gap: 1.5rem;
+    }
+    
+
     .slider-arrows{
         display: flex;
-        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    /*arrows*/
+    .slider-arrows img{
+        width: 60px;
+        height: auto;
+        cursor: pointer;
+    }
+
+     /*slider*/
+     .testimonies-slider .slider{
+        max-width: 330px;
         align-items: center;
-        justify-content: center;
+        overflow-y: hidden;
+        touch-action: auto;
+    }
+
+    /*testimonies card*/
+    .testimonies .card{
+        width: 330px;
+        height: 430px;
+        gap: 1.5rem;
+        padding: 1rem;
+        padding-top: 3rem;
+        margin: 0;
+    }
+
+    .testimonies .card h4{
+        font-size: 1.6rem;
+    }
+
+    .testimonies .card P{
+        font-size: 1rem;
+    }
+
+    /*image*/
+    .testimonies .card img{
+        width: 120px;
+        height: auto;
+    }
+
+    .testimonies .card:last-child{
+        display: flex;
+    }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+    
+
+    .testimonies-title{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .testimonies-title h2, .testimonies-title h2 span{
+        font-size: 1.7rem;
+        line-height: 32px;
+    }
+
+    /*slider container*/
+    .testimonies-slider{
+        gap: 1rem;
     }
 
     /*arrows*/
@@ -198,19 +296,22 @@
         height: auto;
     }
 
+    .seemore a{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
 }
 
-/*NOTEBOOKS*/
-@media only screen and (max-width:1023px){
-    /*main container*/
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
     .testimonies{
-        padding: 1.5rem 3rem;
+        padding: 3rem 1rem;
     }
 
-    /*slider container*/
-    .testimonies-slider{
-        flex-direction: column;
-        gap: 1.5rem;
+    .testimonies-title h2, .testimonies-title h2 span{
+        font-size: 1.5rem;
+        line-height: 32px;
     }
 
     /*arrows*/
@@ -218,70 +319,9 @@
         width: 70px;
         height: auto;
     }
-}
 
-/*TABLETS*/
-@media only screen and (max-width:768px){
-    
-    /*main container*/
-    .testimonies{
-        min-height: 80svh;
-        padding: 1rem 2rem;
+    .seemore a{
+        font-size: 1.2rem;
+        padding-bottom: 0.3rem;
     }
-
-    .testimonies-title{
-        gap: 0.3rem;
-    }
-
-    .testimonies-title h2{
-        font-size: 1.7rem;
-        line-height: 32px;
-        align-self: center;
-    }
-
-    .testimonies-title p{
-        max-width: 270px;
-        font-size: 1.3rem;
-        line-height: 27px;
-        align-self: center;
-        text-align: center;
-    }
-
-    /*slider container*/
-    .testimonies-slider{
-        gap: 1rem;
-    }
-
-    /*slider*/
-    .testimonies-slider .slider{
-        max-width: 300px;
-        gap:0;
-    }
-
-    /*testimonies card*/
-    .testimonies .card{
-        max-width: 300px;
-        max-height: 400px;
-        height: auto;
-        padding: 1rem;
-        padding-top: 2rem;
-        margin-right: 0;
-    }
-
-    /*image*/
-    .testimonies .card img{
-        width: 60px;
-        height: auto;
-    }
-
-    /*arrows*/
-    .slider-arrows img{
-        width: 60px;
-        height: auto;
-    }
-}
-
-/*SMARTH PHONES*/
-@media only screen and (max-width:480px){
-
 }

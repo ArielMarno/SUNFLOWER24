@@ -45,7 +45,7 @@
 
 /*second row*/
 .about-title .middle{
-    margin-right: 2vw;
+    margin-right: 1vw;
 }
 
 /*thrid row*/
@@ -55,14 +55,14 @@
 
 .about-title h2{
     font-family: var(--font-title);
-    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    font-size: clamp(2rem, -1.8571rem + 4.2857vw, 3.5rem);
     line-height: 57px;
 }
 
 /*yellow title text*/
 .about-title h2 span{
     font-family: var(--font-title);
-    font-size: clamp(2rem, -3.1429rem + 5.7143vw, 4rem);
+    font-size: clamp(2rem, -1.8571rem + 4.2857vw, 3.5rem);
     color: var(--color-yellow);
 }
 
@@ -131,7 +131,7 @@
 
     .about{
         gap: 0.5rem;
-        padding: 1.5rem 3rem;
+        padding: 3rem;
     }
 
     .about-image{
@@ -179,7 +179,7 @@
     .about{
         display: flex;
         flex-direction: column-reverse;
-        padding: 1rem 2rem;
+        padding: 3rem 2rem;
         gap: 3rem;
     }
 
@@ -193,7 +193,8 @@
     }
 
     .about-title h2, .about-title h2 span{
-        font-size: clamp(1.5rem, 1.1667rem + 1.1111vw, 1.7rem);
+        font-size: 1.4,5rem;
+        line-height: 27px;
     }
 
     .about-title section{
@@ -219,8 +220,7 @@
 @media only screen and (max-width:480px){
 
     .about{
-        min-height: 90svh;
-        padding: 0.5rem 1rem;
+        padding: 3rem 1rem;
     }
 
     .about-image{
@@ -228,11 +228,4 @@
         height: auto;
     }
 
-    .about-title{
-        padding-top: 1rem;
-    }
-
-    .about-title h2, .about-title h2 span{
-        font-size: clamp(1.3rem, 0.54rem + 3.2vw, 1.5rem);
-    }
 }
