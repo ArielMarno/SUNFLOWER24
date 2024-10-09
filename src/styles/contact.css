@@ -116,7 +116,7 @@ button{
 
 /*arrow*/
 button img{
-    width: 25px;
+    width: 32px;
     height: auto;
 }
 
@@ -166,6 +166,11 @@ button img{
     button{
         margin-top: 1.5rem;
         font-size: 1.3rem;
+    }
+    /*arrow*/
+    button img{
+        width: 30px;
+        height: auto;
     }
 }
 
@@ -217,6 +222,12 @@ button img{
         margin-top: 1.3rem;
         font-size: 1.2rem;
     }
+
+    /*arrow*/
+    button img{
+        width: 27px;
+        height: auto;
+    }
 }
 
 /*TABLETS*/
@@ -248,12 +259,6 @@ button img{
         width: 300px;
         font-size: 0.9rem;
     }
-
-    /*submit button*/
-    button{
-        margin-top: 1.3rem;
-        font-size: 1.2rem;
-    }
 }
 
 /*SMARTH PHONES*/
@@ -271,5 +276,10 @@ button img{
     button{
         margin-top: 1.2rem;
         font-size: 1.1rem;
+    }
+    /*arrow*/
+    button img{
+        width: 25px;
+        height: auto;
     }
 }
