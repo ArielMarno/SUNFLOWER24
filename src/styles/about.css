@@ -2,7 +2,7 @@
 .about{
     width: 100%;
     min-height: 100svh;
-    background-image: url("src/assets/bg/grey-bg.webp");
+    background-image: url("/grey-bg.webp");
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

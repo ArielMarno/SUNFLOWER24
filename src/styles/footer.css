@@ -2,7 +2,7 @@
 .footer{
     width: 100%;
     min-height: 50svh;
-    background-image: url("src/assets/bg/footer.webp");
+    background-image: url("/footer.webp");
     background-size: cover;
     background-position: center;
     display: grid;

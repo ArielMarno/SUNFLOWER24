@@ -2,7 +2,7 @@
 .testimonies{
     width: 100%;
     min-height: 100svh;
-    background-image: url("src/assets/bg/grey-bg.webp");
+    background-image: url("/grey-bg.webp");
     background-size: cover;
     background-position: center;
     display: grid;

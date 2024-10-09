@@ -1,7 +1,7 @@
 .portfolio{
     width: 100%;
     min-height: 100svh;
-    background-image: url("src/assets/bg/dark-bg.webp");
+    background-image: url("/dark-bg.webp");
     background-position: center;
     display: grid;
     grid-template-columns: 1fr;

@@ -2,7 +2,7 @@
 .home{
     width: 100%;
     min-height: 100svh;
-    background-image: url("src/assets/bg/dark-bg.webp");
+    background-image: url("/dark-bg.webp");
     background-size: cover;
     background-position: center;
     display: grid;
