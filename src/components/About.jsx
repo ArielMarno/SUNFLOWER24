@@ -5,20 +5,20 @@ AOS.init();
 
 const About = () => {
   return (
-    <div className='about' id='nosotros'>
+    <div className='about' id='about'>
         <div className='about-image' data-aos="fade-up">
             <img src={about} alt="smarthphone" />
         </div>
         <div className='about-title' data-aos="fade-up">
             <div className='title'>
-                <h2>TRABAJAMOS CON <span>CREATIVIDAD</span></h2>
-                <h2 className='middle'>PARA <span>IMPACTAR</span> EN EL <span>CRECIMIENTO</span></h2>
-                <h2> DE TU NEGOCIO.</h2>
+                <h2>WE WORK WITH  <span>CREATIVITY</span></h2>
+                <h2 className='middle'>TO <span>IMPACT THE GROWTH</span></h2>
+                <h2> OF YOUR BUSINESS.</h2>
             </div>
             <section>
-                <p data-aos="fade-up">Generá <span>confianza</span> en tu público para convertirlos en potenciales clientes.</p>
-                <p className='middle-text' data-aos="fade-up">Transformá la <span>imagen</span> de tu marca a una que te represente de verdad.</p>
-                <p data-aos="fade-up">Maximizá tu <span>alcance</span> de manera clara y sostenible, a mediano y largo plazo.</p>
+                <p data-aos="fade-up">Build <span>trust</span> in your audience to convert them into potential customers.</p>
+                <p className='middle-text' data-aos="fade-up"><span>Transform</span> your brand image to one that truly represents you.</p>
+                <p data-aos="fade-up">Maximize your <span>reach</span> in a clear and sustainable way, in the medium and long term.</p>
             </section>
         </div>
 

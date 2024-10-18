@@ -13,10 +13,10 @@ const Footer = () => {
         <div className='footer-content'>
             <div className='footer_links'>
                 <a href="#" data-aos="fade-up">Home</a>
-                <a href="#servicios" data-aos="fade-up">Servicios</a>
-                <a href="#portafolio" data-aos="fade-up">Portafolio</a>
-                <a href="#testimonios" data-aos="fade-up">Testimonios</a>
-                <a href="#contacto" data-aos="fade-up">Contacto</a>
+                <a href="#servicios" data-aos="fade-up">Services</a>
+                <a href="#portafolio" data-aos="fade-up">Portfolio</a>
+                <a href="#testimonios" data-aos="fade-up">Testimonies</a>
+                <a href="#contacto" data-aos="fade-up">Contact</a>
             </div>
             <div className='footer_contact'>
                 <p className='cellphone' data-aos="fade-up">+54 9 1170-6852</p>
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer-copy'>
-            <p> © {new Date().getFullYear()} <span>SunFlower Agencia Digital</span>. Todos los derechos reservados.</p>  
+            <p> © {new Date().getFullYear()} <span>SunFlower Digital Agency</span>. All rights reserved.</p>  
         </div>
     </div>
   )

@@ -8,11 +8,11 @@ AOS.init();
 
 const Portfolio = () => {
   return (
-    <div className='portfolio' id='portafolio'>
+    <div className='portfolio' id='portfolio'>
         <div className='portfolio-title' data-aos="fade-up">
-            <h2>TE MOSTRAMOS ALGUNAS DE</h2>
-            <h2 className='middle'>NUESTRAS<span> COLABORACIONES</span><br /></h2>
-            <h2>MAS <span>DESTACADAS</span></h2>
+            <h2>WE <span>SHOW YOU </span>SOME OF</h2>
+            <h2 className='middle'><span>OUR</span> MOST OUTSTANDING</h2>
+            <h2><span>COLLABORATIONS</span></h2>
         </div>
         <div className='portfolio-cases'>
 
@@ -22,14 +22,14 @@ const Portfolio = () => {
                 </div>
                 <div className='case_content'>
                     <h3 data-aos="fade-up">HOGAR PAZ Y BIEN</h3>
-                    <p data-aos="fade-up">En esta colaboración participamos en un re-branding digital de una de las mas cualificadas residencias del adulto mayor en la provincia de Buenos Aires. <br />Pablo, su dueño, nos contacto con la idea de renovar su imagen, su logo y crear una página web. Al ser un negocio familiar y con trayectoria, trabajamos en conjunto para mantener su esencia y transmitir sus valores. </p>
+                    <p data-aos="fade-up">In this collaboration we worked on a digital rebranding for one of the top-rated senior residences in the Buenos Aires province. Pablo, the owner, reached out to us with the idea of refreshing their image, redesigning their logo, and creating a website. As a family-owned business with a long history, we collaborated to maintain their essence and convey their values.</p>
                 </div>
             </div>
 
             <div className='case middle'>
                 <div className='case_content'>
                     <h3 data-aos="fade-up">MUEBLES 44</h3>
-                    <p data-aos="fade-up">Con mas de 8 años de trayectoria, Bárbara y Gonzalo, decidieron comenzar a vender de manera online. Creando una tienda virtual y una landing page para promocionar sus productos, entre ellos: muebles, artículos de decoración y plantas artificiales.<br />A través de Google Negocios y campañas publicitarias lograron generar confianza, reconocimiento e incrementar sus ventas.</p>
+                    <p data-aos="fade-up">With more than 8 years of experience, Bárbara and Gonzalo decided to start selling online. They created a virtual store and a landing page to promote their products, including furniture, decorative items, and artificial plants. Through Google Business and advertising campaigns, they managed to build trust, gain recognition, and increase their sales.</p>
                 </div>
                 <div className='case_image'>
                     <img src={m44} alt="Muebles 44" data-aos="fade-up"/>
@@ -42,7 +42,7 @@ const Portfolio = () => {
                 </div>
                 <div className='case_content'>
                     <h3 data-aos="fade-up">LIZ'S MARKETING</h3>
-                    <p data-aos="fade-up">Elizabeth se puso en contacto con nosotros con la idea de crear un espacio en el que pudiera explicar a sus potenciales clientes, de forma simple pero consistente,  a que se dedica y los servicios que ofrece. <br />A partir de esta idea desarrollamos una Landing Page en conjunto manteniendo el estilo de sus redes sociales y la personalidad de su marca.</p>
+                    <p data-aos="fade-up">Elizabeth contacted us with the idea of creating a space where she could explain to her potential clients, in a simple but coherent way, what she does and the services she offers. Based on this idea, we developed a Landing Page together, maintaining the style of her social media and the personality of her brand.</p>
                 </div>
             </div>
 

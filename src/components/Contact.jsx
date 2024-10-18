@@ -11,7 +11,7 @@ const Contact = () => {
   // Estado para almacenar los datos del formulario
   const [formData, setFormData] = useState({
     nombre: '',
-    telefono: '',
+    phone: '',
     email: '',
     mensaje: '',
   });
@@ -26,27 +26,27 @@ const Contact = () => {
   return (
     <div className='contact' id='contacto'>
         <div className='contact-title'>
-            <p data-aos="fade-up"><span>Empeza hoy mismo</span>, dale una dirección clara a  tu crecimiento. Déjanos tus<span> datos de contacto</span> y nuestro equipo se comunicara con vos lo antes posible para coordinar una reunión y analizar como <span>podemos ayudarte</span>.</p>
+            <p data-aos="fade-up"><span>Start today</span>, give a clear direction to your growth. Leave us your<span> contact details</span> and our team will get in touch with you as soon as possible to coordinate a meeting and discuss how <span> we can help you</span>.</p>
             <div className='title' data-aos="fade-up">
-                <h2><span>NO SIGAS POSPONIENDO</span> EL</h2>
-                <h2 className='middle'>CRECIMIENTO DE TU NEGOCIO,</h2>
-                <h2><span>DIGITALIZATE</span> CON NOSOTROS.</h2>
+                <h2><span>STOP PUTTING OFF</span> THE</h2>
+                <h2 className='middle'>GROWTH OF YOUR BUSINESS,</h2>
+                <h2><span>GO DIGITAL</span> WITH US.</h2>
             </div>
         </div>
         <form action="https://formspree.io/f/myzgrlwn" method="POST">
-                <label htmlFor="nombre"></label>
-                <input type="text" name='nombre' id='nombre' placeholder='Nombre' value={formData.nombre} autoComplete="off" onChange={handleInputChange} required data-aos="fade-up"/>
+                <label htmlFor="name"></label>
+                <input type="text" name='name' id='name' placeholder='Name' value={formData.name} autoComplete="off" onChange={handleInputChange} required data-aos="fade-up"/>
 
-                <label htmlFor="telefono"></label>
-                <input type="number" name='telefono' id='telefono' placeholder='Teléfono' value={formData.telefono} autoComplete="off" onChange={handleInputChange} required data-aos="fade-up"/>
+                <label htmlFor="phone"></label>
+                <input type="number" name='phone' id='phone' placeholder='Phone number' value={formData.phone} autoComplete="off" onChange={handleInputChange} required data-aos="fade-up"/>
 
                 <label htmlFor="email"></label>
                 <input type="mail" name='email' id='email' placeholder='Email' value={formData.email} autoComplete="off" onChange={handleInputChange} required data-aos="fade-up"/>
 
-                <label htmlFor="comentario"></label>
-                <textarea name="mensaje" id="comentario" placeholder='Cómo te gustaría que te ayudemos?' data-aos="fade-up"></textarea>
+                <label htmlFor="message"></label>
+                <textarea name="message" id="message" placeholder='How would you like us to help you?' data-aos="fade-up"></textarea>
 
-                <button type="submit" data-aos="fade-up">CONTACTANOS <img src={arrow} alt="flecha" /></button>
+                <button type="submit" data-aos="fade-up">CONTACT US <img src={arrow} alt="flecha" /></button>
         </form>
 
     </div>

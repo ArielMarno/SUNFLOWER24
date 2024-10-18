@@ -36,10 +36,15 @@ const Home = () => {
         <nav>
             <a href="#"><img src={logo} alt="logo" /></a>
             <section className={`links ${click ? 'active' : ''}`}>
-              <a href="#nosotros">Nosotros</a>
-              <a href="#servicios">Servicios</a>
-              <a href="#portafolio">Portafolio</a>
-              <a href="#contacto">Contacto</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#contact">Contact</a>
+              <div className='lenguage'>
+                <a href="">EN</a>
+                <p>/</p>
+                <a href="https://sunfloweragencia.com/">ES</a>
+              </div>
             </section>
             <div className="burguer">
                 <Burguer handleClick={handleClick}/> 
@@ -47,13 +52,13 @@ const Home = () => {
         </nav>
         <main>
             <div className='title'>
-                <h1>AGENCIA DE <br />
+                <h1><span>DIGITAL</span> <br />
                 <span className='cursive'>marketing </span>
-                DIGITAL</h1>
-                <p>Combinamos <span>innovación</span> con <span>estrategias</span> certeras para mejorar tu presencia en la web y ayudarte a alcanzar tus <span>objetivos comerciales</span>.
+                <span>AGENCY</span></h1>
+                <p>We combine <span>innovation</span> with accurate <span>strategies</span> to improve your web presence and help you achieve your <span>business goals</span>.
                 </p>
 
-                <a className='calendly-inline-widget' href="https://calendly.com/contacto-xv2x/sunflower" onClick={handleClickCalendly}>Asesoría Gratuita</a>
+                <a className='calendly-inline-widget' href="https://calendly.com/contacto-xv2x/sunflower" onClick={handleClickCalendly}>Free Consultation</a>
             </div>
             <div className='home-img'>
                 <img src={person} alt="persona-flores" />

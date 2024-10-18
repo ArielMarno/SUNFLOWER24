@@ -8,6 +8,7 @@
     align-items: center;
     justify-items: flex-start;
     padding: 3rem 5rem;
+    gap: 5vw;
 }
 
 /*iamge container*/
@@ -41,11 +42,12 @@
 /*first row*/
 .about-title h2:first-child{
     align-self: flex-end;
+    margin-left: 2vw;
 }
 
 /*second row*/
 .about-title .middle{
-    margin-right: 1vw;
+    align-self: flex-start;
 }
 
 /*thrid row*/
@@ -76,7 +78,7 @@
 
 /*paragraph*/
 .about section p{
-    max-width: 460px;
+    max-width: 550px;
     font-family: var(--font-text);
     font-size: clamp(1.3rem, 0.7857rem + 0.5714vw, 1.5rem);
 }
@@ -90,7 +92,8 @@
 
 /*middle paragraph*/
 .about section .middle-text{
-    margin-left: 10vw;
+    margin-left: 5vw;
+    max-width: 450px;
 }
 
 
@@ -117,12 +120,18 @@
     }
     
     .about section p{
-        max-width: 400px;
+        max-width: 350px;
         font-size: clamp(1.1rem, 0.6094rem + 0.7674vw, 1.3rem);
     }
     
     .about section p span{
         font-size: clamp(1.1rem, 0.6094rem + 0.7674vw, 1.3rem);
+    }
+
+    /*middle paragraph*/
+    .about section .middle-text{
+        margin-left: 10vw;
+        max-width: 350px;
     }
 }
 
@@ -203,6 +212,10 @@
 
     .about-title section p:first-child, .about-title section p:last-child{
         align-self: flex-start;
+    }
+
+    .about-title  section p{
+        max-width: 300px;
     }
 
     /*middle paragraph*/
