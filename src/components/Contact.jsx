@@ -10,10 +10,10 @@ const Contact = () => {
 
   // Estado para almacenar los datos del formulario
   const [formData, setFormData] = useState({
-    nombre: '',
+    name: '',
     phone: '',
     email: '',
-    mensaje: '',
+    message: '',
   });
 
   // Manejar cambios en los inputs
